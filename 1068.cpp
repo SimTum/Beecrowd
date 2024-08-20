@@ -9,9 +9,8 @@ int main () {
     string equation;
     int ocount = 0, ccount = 0;
     bool check = 1; 
-    do
+    while (cin >> equation)
     {
-        getline(cin,equation);
         for (int i = 0; i < equation.size(); i++) {
             if (equation[i] == '(') 
             {
@@ -32,6 +31,5 @@ int main () {
         check = 1;
         ccount = 0;
         ocount = 0;
-    } while (equation != " ");
-
+    }
 } 
